@@ -1,0 +1,19 @@
+Package: gastronomify
+Type: Package
+Title: Gastronomify a data frame.
+Date: 2013-06-06
+Description: Convert a data frame into food.
+Version: 0.1
+Author: Thomas Levine <wildebeest@thomaslevine.com>
+Maintainer: Thomas Levine <wildebeest@thomaslevine.com>
+License: MIT
+Imports:
+    plyr,
+    reshape2,
+    RCurl,
+    XML
+Collate:
+    'gastronomify.r'
+    'recipes.r'
+    'gutenberg.365.foreign.dishes.r'
+    'taskrabbit.r'
