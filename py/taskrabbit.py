@@ -2,7 +2,6 @@ from selenium import webdriver
 from datetime import datetime
 import os, time
 
-# TASK OBJECT
 
 def taskrabbit(task):
   """
@@ -103,6 +102,7 @@ def taskrabbit(task):
   return "Check %s for notification that your task went through!" % TASKRABBIT_EMAIL
 
 if __name__ == '__main__':
+  
   task = {
     "summary": "Make Data-Driven Fruit Salad for the MIT Media Lab",
     "address": "MIT Media Lab | Building E14 | 77 Massachusetts Avenue | Cambridge, MA 02139",
@@ -112,4 +112,5 @@ if __name__ == '__main__':
     "finish_time": "7pm", #6am - 11pm
     "description": "There are 4 fruit salad recipes below. They are named\n*  Diet 1 \n*  Diet 2 \n*  Diet 3 \n*  Diet 4 \n\nPlease make each recipe in a separate bowl.\nLabel each bowl according to its recipe,\nand deliver the food to the specified place and time.\nThe recipes follow.\n\n               Diet 1\napples      3.0622331\nbananas     0.6741632\ncherries    7.4511099\ngrapes      9.3600661\nkiwis       1.3602364\nlemons      0.3123323\nmangos      0.9009303\nnectarines  1.1383358\noranges     1.1554227\npineapples  0.4297087\nraspberries 6.0614287\nwatermelons 0.1745475\n\n\n                Diet 2\napples       2.9597315\nbananas      0.9520856\ncherries    11.5328243\ngrapes      12.8646019\nkiwis        1.8260780\nlemons       0.4593157\nmangos       0.9874277\nnectarines   1.7863692\noranges      1.8113601\npineapples   0.4844688\nraspberries  7.8742339\nwatermelons  0.2385661\n\n\n                Diet 3\napples       2.9743746\nbananas      1.1068131\ncherries    13.8807299\ngrapes      17.1432489\nkiwis        2.5857183\nlemons       0.6913506\nmangos       1.0276590\nnectarines   2.7679522\noranges      2.7983727\npineapples   0.5239792\nraspberries  8.4005679\nwatermelons  0.2742629\n\n\n                Diet 4\napples       3.0036608\nbananas      1.2669381\ncherries    15.1353359\ngrapes      16.6320831\nkiwis        2.2279672\nlemons       0.5370014\nmangos       1.0839829\nnectarines   2.3073428\noranges      2.2348445\npineapples   0.5618434\nraspberries  9.6637695\nwatermelons  0.3126236\n"
   }
+  
   print taskrabbit(task)
